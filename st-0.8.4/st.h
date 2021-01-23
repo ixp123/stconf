@@ -74,7 +74,6 @@ typedef union {
 	uint ui;
 	float f;
 	const void *v;
-	const char *s;
 } Arg;
 
 void die(const char *, ...);
@@ -113,13 +112,12 @@ char *xstrdup(char *);
 
 /* config.h globals */
 extern char *utmp;
-extern char *scroll;
 extern char *stty_args;
 extern char *vtiden;
-extern wchar_t *worddelimiters;
+extern char *worddelimiters;
 extern int allowaltscreen;
-extern int allowwindowops;
 extern char *termname;
 extern unsigned int tabspaces;
+extern unsigned int alpha;
 extern unsigned int defaultfg;
 extern unsigned int defaultbg;
